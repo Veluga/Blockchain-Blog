@@ -1,0 +1,9 @@
+// Import utilities that determine Sass behaviour (e.g. variables, functions, mixins, etc.)
+@import 'utilities/_variables';
+
+// Render elements consistently across all browsers, preserving useful browser standards
+@import 'reset/_normalize';
+@import 'reset/_base'; 
+
+// Style for main structural components of the page
+@import 'layout/_nav';
