@@ -1,0 +1,51 @@
+.main-content img {
+    width: 55px;
+    margin: auto;
+}
+
+.main-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.learn-more {
+    background-color: #343535;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0.75em 1.5em;
+    border-radius: 0.45em;
+    transition: 0.3s;
+    border: none;   
+    &:hover {
+        color: #F7931A;
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 0.75em;
+    padding: 1.5em 1em;
+    margin: $gutter;
+
+    @include mq('sm') {
+        flex: 1 items-per-line(2);
+    }
+    #glossar-img {
+        margin-left: 20px;
+    }
+    a {
+        margin-top: auto;
+    }
+}
+
+

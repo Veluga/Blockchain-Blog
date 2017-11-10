@@ -16,4 +16,9 @@ $breakpoints: (
     'sm': 576px,
    'med': 768px,
     'lg': 992px,  
-  );
+);
+
+// Width properties
+
+$max-width: 1000px;
+$gutter: 10px;

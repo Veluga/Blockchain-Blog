@@ -5,10 +5,15 @@ header {
     background-position: center;
     color: $white;
     h1 {
-        margin-top: 1.3em;
-        font-size: 2.8em;
+        margin-top: 2em;
+        font-size: 2.6em;
         @include mq('sm') {
             margin-top: 2.5em;
+        }
+        // Special case for iPad / iPad Mini Screens
+        @media (width: 768px) {
+            font-size: 2.4em; 
+            margin-top: 3.2em;
         }
     }
     @include skewed {
@@ -16,15 +21,17 @@ header {
         bottom: -25px;
     }
     img {
-        @include rounded(190px, 5px solid white) {
+        @include rounded(165px, 5px solid #fff) {
             @include mq('xs') {
                 display: none;
             }
-            margin-top: 75px;
+            margin-top: 50px;
             position: relative;
             z-index: 100;
+            padding: none;
         }
     }
+    
 }
 
 .main-nav {
@@ -49,16 +56,12 @@ li {
         text-transform: uppercase;
         padding: 0.5em;
         transition: 0.45s;
-        &:hover, &:active  {
+        &:hover {
             color: $link-hover;
+            text-decoration: none;
+        }
+        &:active {
             text-decoration: none;
         }
     }
 }
-
-p {
-    @include mq('xs') {
-        display: none;
-    }
-}
-

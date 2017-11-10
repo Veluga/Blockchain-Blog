@@ -1,0 +1,30 @@
+.intro p {
+    margin-top: 25px;
+    @include mq('sm') {
+        margin-top: 75px;
+    }
+}
+
+.btn-intro {
+    background-color: #F7931A;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0.75em 1.5em;
+    border-radius: 0.45em;
+    transition: 0.3s;
+    border: none;   
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.intro-main-hr {
+    margin-top: 27px;
+}

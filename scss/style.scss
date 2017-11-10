@@ -2,6 +2,7 @@
 @import 'utilities/_fonts';
 @import 'utilities/_variables';
 @import 'utilities/_mixins';
+@import 'utilities/functions';
 
 // Render elements consistently across all browsers, preserving useful browser standards
 @import 'reset/_normalize';
@@ -9,3 +10,6 @@
 
 // Style for main structural components of the page
 @import 'layout/_nav';
+@import 'layout/_intro';
+@import 'layout/_cards';
+@import 'layout/footer';
