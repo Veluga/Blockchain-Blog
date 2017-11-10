@@ -3,7 +3,17 @@
 // ======================================
 
 // Colors
-$color-text: #1d1e21;
+$color-text: #0B1232;
+$link-hover: #b7aeae;
+$white: #fff;
 
 // Fonts
-$font-stack-primary: 'Calibri', sans-serif; 
+$font-stack-primary: 'Raleway', sans-serif; 
+
+// Breakpoints
+$breakpoints: (
+    'xs': 575px, 
+    'sm': 576px,
+   'med': 768px,
+    'lg': 992px,  
+  );
