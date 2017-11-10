@@ -1,31 +1,31 @@
-.main-content img {
-    width: 55px;
-    margin: auto;
-}
-
 .main-content {
     width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    img {
+        width: 55px;
+        margin: auto;
+    }
 }
 
 .learn-more {
+    position: relative;
     background-color: #343535;
     color: #fff;
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin: auto;
     padding: 0.75em 1.5em;
     border-radius: 0.45em;
     transition: 0.3s;
-    border: none;   
+    border: 0px;   
     &:hover {
         color: #F7931A;
         text-decoration: none;
-    }
+    }   
     &:active {
         text-decoration: none;
     }
@@ -36,6 +36,7 @@
     border-radius: 0.75em;
     padding: 1.5em 1em;
     margin: $gutter;
+    position: relative;
 
     @include mq('sm') {
         flex: 1 items-per-line(2);
@@ -43,8 +44,10 @@
     #glossar-img {
         margin-left: 20px;
     }
-    a {
-        margin-top: auto;
+    h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 20px;   
     }
 }
 
